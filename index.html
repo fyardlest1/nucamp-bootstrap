@@ -29,6 +29,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-xl-2">
+                    <a class="btn btn-info btn-lg mt-4" href="#reserveForm">Reserve Campsite</a>
+                </div>
             </div>
 
         </div>
@@ -73,16 +76,13 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
                 <div class="media">
-
                     <div class="media-body align-self-center">
                         <h3>React Lake Campground</h3>
                         <p class="d-sm-block d-none">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
@@ -91,9 +91,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
@@ -109,32 +107,30 @@
                 </div>
             </div>
         </div>
+
+        <!-- Creating the Card -->
         <div class="row row-content align-item-center">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
-                        <form>
-                            <div class="form-row">
-                                <!--div class="form-group col-sm-6"-->
-                                    <label class="form-group col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                                <!--/div-->
+                        <form id="reserveForm">
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers">
-                                        <option value="select">Select...</option>
-                                        <option value="un">1</option>
-                                        <option value="deux">2</option>
-                                        <option value="trois">3</option>
-                                        <option value="quatre">4</option>
-                                        <option value="cinq">5</option>
+                                        <option value="select">Select ...</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
                                         <option value="six">6</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <!--div class="form-group col-sm-6"-->
-                                    <label class="form-group col-sm-6 col-form-label" for="date">Date</label>
-                                <!--/div-->
+                            <div class="row">
+                                <label class="col-sm-6 col-form-label" for="date">Date</label>
                                 <div class="col mt-0">
                                     <input class="form-control" type="date" id="date" name="date" placeholder="Select date">
                                 </div>
