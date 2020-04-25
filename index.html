@@ -49,7 +49,43 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form>
-                            
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                                <div class="col">
+                                    <select class="form-control" name="numCampers" id="numCampers">
+                                        <option value="select">Select ...</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="date">Date</label>
+                                <div class="col mt-0">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="Select date">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="">Campsite Type</label>
+                                <div class="col btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active" id="radio">
+                                        <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off" checked> Tent
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="siteType" id="siteRV" value="RV" autocomplete="off"> RV
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col mt-3">
+                                    <button class="btn btn-dark btn-md" type="button" data-dismiss="modal">Cancel</button>
+                                    <button class="btn btn-primary btn-md" type="submit">Search</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -60,13 +96,17 @@
     <!-- Setting up the navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" height="30" width="30" />
+            </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-home fa-lg"></i> Home</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html">
                             <i class="fa fa-info fa-lg"></i>About</a>
@@ -223,43 +263,6 @@
             </div>
         </div>
 
-        <!-- Creating the Card -->
-        <div class="row row-content align-item-center">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                    <div class="card-body">
-                        <form id="reserveForm">
-                            <div class="row form-group">
-                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                                <div class="col">
-                                    <select class="form-control" name="numCampers" id="numCampers">
-                                        <option value="select">Select ...</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-6 col-form-label" for="date">Date</label>
-                                <div class="col mt-0">
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="Select date">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col mt-3">
-                                    <button class="btn btn-primary btn-md" type="submit">Search</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer class="site-footer">
