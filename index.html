@@ -30,11 +30,10 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2">
-                    <!-- Preparing the button for Modal by adding data-toggle="modal" and data-target="#reserveModal" -->
-                    <a data-toggle="modal" data-target="#reserveModal" role="button" class="btn btn-lg btn-info mt-4">Reserve Campsite</a>
+                    <!-- Preparing the button for jQuerry to open the "modal" -->
+                    <a id="reserveButton" role="button" class="btn btn-lg btn-info mt-4">Reserve Campsite</a>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -66,23 +65,27 @@
                             <div class="row form-group">
                                 <label class="col-sm-6 col-form-label" for="date">Date</label>
                                 <div class="col mt-0">
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="Select date">
+                                    <input class="form-control" type="date" id="date" name="date"
+                                        placeholder="Select date">
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <label class="col-sm-6 col-form-label" for="">Campsite Type</label>
                                 <div class="col btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-success active" id="radio">
-                                        <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off" checked> Tent
+                                        <input type="radio" name="siteType" id="siteTent" value="tent"
+                                            autocomplete="off" checked> Tent
                                     </label>
                                     <label class="btn btn-primary">
-                                        <input type="radio" name="siteType" id="siteRV" value="RV" autocomplete="off"> RV
+                                        <input type="radio" name="siteType" id="siteRV" value="RV" autocomplete="off">
+                                        RV
                                     </label>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col mt-3">
-                                    <button class="btn btn-dark btn-md" type="button" data-dismiss="modal">Cancel</button>
+                                    <button class="btn btn-dark btn-md" type="button"
+                                        data-dismiss="modal">Cancel</button>
                                     <button class="btn btn-primary btn-md" type="submit">Search</button>
                                 </div>
                             </div>
@@ -111,16 +114,18 @@
                     <li class="nav-item"><a class="nav-link" href="aboutus.html">
                             <i class="fa fa-info fa-lg"></i>About</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html">
                             <i class="fa fa-address-card fa-lg"></i>
                             Contact</a></li>
                 </ul>
 
-                <!-- Login button for: data-toggle="modal"-->
+                <!-- Login button for: jQuery to open the "modal" -->
                 <span class="navbar-text ml-auto">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login</a>
+                    <a id="loginButton">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
                 </span>
             </div>
         </div>
@@ -180,7 +185,8 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" />
+                            <img class="d-block w-100" src="img/breadcrumb-trail.jpg"
+                                alt="Breadcrumb Trail Campground" />
                             <div class="carousel-caption">
                                 <h3>Breadcrumb Trail Campground</h3>
                                 <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.</p>
@@ -190,15 +196,18 @@
                             <img class="d-block w-100" src="img/react-lake.jpg" alt="React Lake Campground" />
                             <div class="carousel-caption">
                                 <h3>React Lake Campground</h3>
-                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this
+                                    campground on the shores of the pristine React Lake is a favorite for fly fishers.
+                                </p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="img/chrome-river.jpg" alt="Chrome River Campground" />
                             <div class="carousel-caption">
                                 <h3>Chrome River Campground</h3>
-                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome
-                                River.</p>
+                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy
+                                    of old-growth firs at this enchanting spot by the Chrome
+                                    River.</p>
                             </div>
                         </div>
                     </div>
@@ -213,9 +222,9 @@
                     </a>
 
                     <!-- Play-Pause Button control -->
-                        <button class="btn btn-danger btn-sm" id="carouselButton">
-                            <i class="fa fa-pause"></i>
-                        </button>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -231,7 +240,8 @@
                         alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                            own reviews!
                         </p>
                     </div>
                 </div>
@@ -246,7 +256,8 @@
                 <div class="media">
                     <div class="media-body align-self-center">
                         <h3>React Lake Campground</h3>
-                        <p class="d-sm-block d-none">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                        <p class="d-sm-block d-none">Nestled in the foothills of the Chrome Mountains, this campground
+                            on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
                     <img src="img/react-lake-thumb.jpg" alt="React Lake" class="d-flex ml-3 img-thumbnail">
                 </div>
@@ -262,7 +273,8 @@
                     <img class="d-flex mr-3 img-thumbnail " src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
+                            can't beat.
                         </p>
                     </div>
                 </div>
@@ -309,22 +321,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 
     <script>
-       $(function () {
-            $(".carousel").carousel({ interval: 2000 });
-            $("#carouselButton").click(function () {
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-        });
+        
     </script>
 
 </body>
