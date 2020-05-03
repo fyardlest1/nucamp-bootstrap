@@ -2,13 +2,11 @@ $(function () {
     // Adding jQuery for the Reserve a Campsite button
     $("#reserveButton").click(function () {
         $("#reserveModal").modal("show");
-        $("#reserveModal").modal("hide");
     });
 
     // Adding jQuery for the login
     $("#loginButton").click(function () {
         $("#loginModal").modal("show");
-        $("#loginModal").modal("hide");
     });
 
     // Pause and play Carousel Button
